@@ -1,0 +1,24 @@
+<header>
+    <nav class="menu">
+        <div>
+            <button routerLink="/produtos" mat-raised-button color="primary">
+                <fa-icon [icon]="faShoppingCart"></fa-icon>
+                Produtos
+            </button>
+        </div>
+        <div>
+            <button mat-raised-button color="primary" routerLink="/clientes">
+                <fa-icon [icon]="faUser"></fa-icon>
+                Clientes
+            </button>
+        </div>
+        <div>
+            <button mat-raised-button color="primary" routerLink="/login">
+                <mat-icon>home</mat-icon>
+                Login
+            </button>
+        </div>
+    </nav>
+</header>
+
+<router-outlet></router-outlet>

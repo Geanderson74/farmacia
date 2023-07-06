@@ -1,0 +1,71 @@
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    .tela{
+        background-color: #6b0f33; background-image: linear-gradient(338deg, #6b0f33 20%, #c2185b 91%);
+        width: 350px;
+        height: 350px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        box-shadow: 0px 13px 19px -3px rgba(0, 0, 0, 0.75);
+        .foto{
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            background-color: #6b0f33;
+            top: -60px;
+            border-radius: 60px;
+            box-shadow: 0px 10px 24px 7px rgba(0, 0, 0, 0.75);
+            .user{
+                font-size: 60px;
+                position: absolute;
+                left: 28%;
+                top: 25px;
+                color: #ffffff;
+            }
+        }
+        .campos{
+            width: 100%;
+            margin-top: 50px;
+            .usuario, .senha{
+                padding: 10px 40px;
+                input{
+                    width: 90%;
+                    height: 15px;
+                    outline: none;
+                    border-radius: 5px;
+                    border: none;
+                    padding: 10px;
+                    font-size: 15px;
+                    border-left: 10px solid #6b0f33;
+                }
+            }
+        }
+        .entrar{
+            width: 50%;
+            margin-top: 30px;
+            button{
+                width: 100%;
+                height: 50px;
+                font-size: 15px;
+                font-weight: bold;
+                border-radius: 10px;
+                border: none;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: all .3s;
+                &:hover{
+                    background-color:#c2185b;
+                    border: 1px solid #ffffff;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}

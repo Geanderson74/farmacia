@@ -7,7 +7,9 @@ import { LoginComponent } from './login/login.component';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { ClientesComponent } from './clientes/clientes.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import {MatIconModule} from '@angular/material/icon';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatButtonModule,
+    MatIconModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
