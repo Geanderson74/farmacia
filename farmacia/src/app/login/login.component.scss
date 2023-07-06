@@ -35,6 +35,7 @@
             margin-top: 50px;
             .usuario, .senha{
                 padding: 10px 40px;
+                position: relative;
                 input{
                     width: 90%;
                     height: 15px;
@@ -44,6 +45,12 @@
                     padding: 10px;
                     font-size: 15px;
                     border-left: 10px solid #6b0f33;
+                    
+                }
+                .person, .key{
+                    position: absolute;
+                    right: 42px;
+                    top: 14px;
                 }
             }
         }
