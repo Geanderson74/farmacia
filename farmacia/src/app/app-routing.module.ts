@@ -7,10 +7,30 @@ import { ProdutosComponent } from './produtos/produtos.component';
 
 
 const routes: Routes = [
-  {path: '', component: LoginComponent },
-  {path: 'login', component: LoginComponent },
-  {path: 'clientes', component: ClientesComponent },
-  {path: 'produtos', component: ProdutosComponent },
+  // {path: '', component: LoginComponent },
+  // {path: 'login', component: LoginComponent },
+  // {path: 'clientes', component: ClientesComponent },
+  // {path: 'produtos', component: ProdutosComponent },
+  {
+    path: '',
+    loadChildren: () => import('./login/login.module').then(m => m.LoginModule)
+  },
+
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then(m => m.LoginModule)
+  },
+
+  {
+    path: 'produtos',
+    loadChildren: () => import('./produtos/produtos.module').then(m => m.ProdutosModule)
+  },
+  
+  
+  {
+    path: 'clientes',
+    loadChildren: () => import('./clientes/clientes.module').then(m => m.ClientesModule)
+  }
 ];
 
 @NgModule({
