@@ -64,5 +64,15 @@
                 }
             }
         }
+        .botao{
+            margin-top: 35px;
+            text-align: center;
+            button{
+                &:hover{
+                    background-color: #ffffff;
+                    color: #6b0f33;
+                }
+            }
+        }
     }
 }
