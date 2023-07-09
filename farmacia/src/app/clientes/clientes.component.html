@@ -1,1 +1,53 @@
-<p>clientes works!</p>
+<!-- <p>clientes works!</p> -->
+
+<section class="center">
+    <div class="formulario">
+        <form action="">
+            <h1 class="title">Cadastro de Clientes</h1>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Nome Completo</mat-label>
+                <input matInput type="text">
+            </mat-form-field>
+            
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Email</mat-label>
+                <input type="email" matInput placeholder="Ex. email@exemplo.com">
+            </mat-form-field>
+            
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Endereço</mat-label>
+                <input matInput type="text" placeholder="Somente rua e número">
+            </mat-form-field>
+            
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>CPF</mat-label>
+                <input matInput type="text">
+            </mat-form-field>
+            
+            <div class="dateCpf">
+                <mat-form-field appearance="fill">
+                    <mat-label>Data de Nascimento</mat-label>
+                    <input matInput [matDatepicker]="picker">
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+                
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Telefone</mat-label>
+                    <input matInput type="text">
+                </mat-form-field>
+            </div>
+            
+            <div class="PCD">
+                <mat-checkbox class="example-margin">Sou <strong>PCD</strong> (pessoa com deficiência)</mat-checkbox>
+            
+                <mat-radio-group aria-label="Select an option">
+                    <mat-label>Sexo</mat-label>
+                    <mat-radio-button value="1">Masculino</mat-radio-button>
+                    <mat-radio-button value="2">Feminino</mat-radio-button>
+                </mat-radio-group>
+            </div>
+        </form>
+    </div>
+</section>

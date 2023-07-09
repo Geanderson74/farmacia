@@ -9,6 +9,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -23,8 +29,17 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatButtonModule,
     MatIconModule,
     FontAwesomeModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatCheckboxModule,
+    MatRadioModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
   ],
-  providers: [],
+  providers: [
+    MatDatepickerModule,
+    MatNativeDateModule,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
