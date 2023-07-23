@@ -18,13 +18,15 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
-
+import { MatDialogModule } from '@angular/material/dialog';
+import { DialogComponent } from './dialog/dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ClientesComponent,
+    DialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,7 +45,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     ReactiveFormsModule,
     MatTableModule,
     MatPaginatorModule,
-    
+    MatDialogModule,
   ],
   providers: [
     MatDatepickerModule,

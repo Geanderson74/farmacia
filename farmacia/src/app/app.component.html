@@ -1,9 +1,15 @@
 <header>
     <nav class="menu">
         <div>
-            <button routerLink="/produtos" mat-raised-button>
+            <button mat-raised-button routerLink="/produtos">
                 <fa-icon [icon]="faShoppingCart"></fa-icon>
                 Produtos
+            </button>
+        </div>
+        <div>
+            <button mat-raised-button (click)="openDialog()">
+                <fa-icon [icon]="faClipboardUser"></fa-icon>
+                Cadastro
             </button>
         </div>
         <div>
